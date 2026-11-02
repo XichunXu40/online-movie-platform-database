@@ -1,0 +1,381 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT - lecture underline rule" pages="2">
+  <diagram id="logical-relations-with-keys" name="Relations with Keys">
+    <mxGraphModel dx="2315" dy="1650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1550" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;align=left;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Logical Relational Model - 3NF Movie Platform Schema&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="1200" x="890" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#cccccc;fontSize=12;align=left;spacing=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Legend&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;PK / PK-FK&lt;/span&gt; = primary key field; when two PK/FK fields appear in one intersection relation, they form a &lt;b&gt;Composite PK&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;FK only&lt;/span&gt; = foreign key not part of PK &amp;nbsp;&amp;nbsp; &lt;b&gt;U&lt;/b&gt; = unique / candidate key constraint&lt;/font&gt;" vertex="1">
+          <mxGeometry height="46" width="1040" x="1280" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#c9dff2;fontSize=15;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Parent / reference relations&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="330" x="40" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#c9dff2;fontSize=15;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Dependent and activity relations&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="390" x="40" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#c9dff2;fontSize=15;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Intersection relations for M:N relationships&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="510" x="40" y="884" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USERS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="900" x="60" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="90" x="60" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;username&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;U&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="150" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;email&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;U&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="145" x="260" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;password_hash&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="150" x="405" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;registration_date&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="150" x="555" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;account_status&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="135" x="705" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;created_at&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="120" x="840" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;MOVIES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="1140" x="60" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;movie_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="90" x="60" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;title&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;U(title, release_year)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="180" x="150" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;release_year&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;U(title, release_year)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="180" x="330" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;duration_minutes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="150" x="510" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;original_language&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="160" x="660" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;country&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="70" x="820" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;maturity_rating&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="130" x="890" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;synopsis&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="80" x="1020" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;added_date&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="1100" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;GENRES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="530" x="60" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;genre_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="90" x="60" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;genre_name&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;U&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="140" x="150" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;description&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="300" x="290" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USER_PROFILES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="965" x="60" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;profile_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="60" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → USERS.user_id; U&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="210" x="160" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;display_name&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="130" x="370" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;country&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="70" x="500" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;date_of_birth&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="120" x="570" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;preferred_language&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="170" x="690" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;marketing_opt_in&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="165" x="860" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;REVIEWS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="1180" x="60" y="533" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;review_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="60" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → USERS.user_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="160" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;movie_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → MOVIES.movie_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="210" x="350" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;rating&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="60" x="560" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;review_title&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="620" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;review_text&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="720" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;review_date&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="830" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;review_status&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="125" x="940" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;U(user_id, movie_id)&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;UNIQUE&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="175" x="1065" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;REVIEW_COMMENTS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="950" x="60" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;comment_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="120" x="60" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;review_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → REVIEWS.review_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="230" x="180" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → USERS.user_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="410" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;comment_text&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="130" x="600" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;comment_date&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="130" x="730" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;comment_status&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="150" x="860" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;WATCHLIST_ITEMS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="990" x="60" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;watchlist_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="60" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → USERS.user_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="170" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;movie_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → MOVIES.movie_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="210" x="360" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;added_date&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="570" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;priority_level&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="680" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;watched&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="80" x="790" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;U(user_id, movie_id)&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;UNIQUE&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="180" x="870" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;VIEWING_HISTORY&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="990" x="60" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;viewing_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="105" x="60" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → USERS.user_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="195" x="165" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px dashed rgb(0, 0, 0);&quot;&gt;movie_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;FK → MOVIES.movie_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="210" x="360" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;watched_at&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="570" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;progress_minutes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="160" x="680" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;completed&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="840" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;device_type&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="110" x="940" y="811" as="geometry" />
+        </mxCell>
+        <mxCell id="71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;MOVIE_GENRES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="500" x="60" y="924" as="geometry" />
+        </mxCell>
+        <mxCell id="72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;movie_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK/FK → MOVIES.movie_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="250" x="60" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;genre_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK/FK → GENRES.genre_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="250" x="310" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#555555;fontStyle=1;fontSize=13;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;USER_GENRE_PREFERENCES&lt;/font&gt;" vertex="1">
+          <mxGeometry height="26" width="740" x="60" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;user_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK/FK → USERS.user_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="230" x="60" y="1036" as="geometry" />
+        </mxCell>
+        <mxCell id="76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;border-bottom: 1px solid rgb(0, 0, 0);&quot;&gt;genre_id&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(85, 85, 85);&quot;&gt;PK/FK → GENRES.genre_id&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="250" x="290" y="1036" as="geometry" />
+        </mxCell>
+        <mxCell id="77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;preference_score&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="160" x="540" y="1036" as="geometry" />
+        </mxCell>
+        <mxCell id="78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;verticalAlign=middle;spacing=4;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;created_at&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="100" x="700" y="1036" as="geometry" />
+        </mxCell>
+        <mxCell id="79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#c9dff2;fontSize=15;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Foreign Key Reference Map&lt;/font&gt;" vertex="1">
+          <mxGeometry height="28" width="330" x="1280" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#666666;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Child relation foreign key(s)&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="28" width="620" x="1280" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#666666;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Design rule applied&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="28" width="360" x="1900" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;USER_PROFILES.user_id → USERS.user_id  [1:0..1]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:1 optional side stores FK&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;REVIEWS.user_id → USERS.user_id;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;REVIEWS.movie_id → MOVIES.movie_id&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:M FKs on many side&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;REVIEW_COMMENTS.review_id → REVIEWS.review_id; REVIEW_COMMENTS.user_id → USERS.user_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:M dependent comments&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;WATCHLIST_ITEMS.user_id → USERS.user_id; WATCHLIST_ITEMS.movie_id → MOVIES.movie_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:M activity relation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="422" as="geometry" />
+        </mxCell>
+        <mxCell id="90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;VIEWING_HISTORY.user_id → USERS.user_id; VIEWING_HISTORY.movie_id → MOVIES.movie_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1:M history relation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MOVIE_GENRES.movie_id → MOVIES.movie_id; MOVIE_GENRES.genre_id → GENRES.genre_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;M:N resolved as intersection relation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="94" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;USER_GENRE_PREFERENCES.user_id → USERS.user_id; USER_GENRE_PREFERENCES.genre_id → GENRES.genre_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="620" x="1280" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=left;spacing=6;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;M:N preference relation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="360" x="1900" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="96" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#cccccc;fontSize=12;align=left;spacing=8;verticalAlign=middle;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;All relations are shown after 3NF normalisation. Intersection relations use composite keys where the same attributes also serve as foreign keys.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="1000" x="1280" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_note_movie_genres" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Composite Primary Key:&lt;/b&gt;&lt;br&gt;movie_id + genre_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="228" x="585" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_note_user_genre_preferences" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;verticalAlign=middle;spacing=6;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Composite Primary Key:&lt;/b&gt;&lt;br&gt;user_id + genre_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="229" x="825" y="1024" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fk-dependency-view" name="FK Dependency View">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Logical Relational Model - FK Dependency View" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1000" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Optional visual dependency view: arrows point from child FK relation to referenced parent PK relation." style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;fontColor=#666666;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="62" width="900" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;Legend&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;PK / PK-FK&lt;/span&gt; = primary key or composite primary-key component &amp;nbsp;&amp;nbsp; &lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;FK only&lt;/span&gt; = foreign key that is not part of the primary key &amp;nbsp;&amp;nbsp; &lt;b&gt;U&lt;/b&gt; = unique / candidate key constraint" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="270" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;MOVIES&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;movie_id&lt;/span&gt; (PK)&lt;br/&gt;title + release_year (U)&lt;br/&gt;maturity_rating" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="300" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;b&gt;GENRES&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;genre_id&lt;/span&gt; (PK)&lt;br/&gt;genre_name (U)&lt;br/&gt;description" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="540" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;b&gt;USER_PROFILES&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;profile_id&lt;/span&gt; (PK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;user_id&lt;/span&gt; (FK, U)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="300" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;b&gt;REVIEWS&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;review_id&lt;/span&gt; (PK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;user_id&lt;/span&gt; (FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;movie_id&lt;/span&gt; (FK)&lt;br/&gt;U(user_id, movie_id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="320" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="&lt;b&gt;REVIEW_COMMENTS&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;comment_id&lt;/span&gt; (PK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;review_id&lt;/span&gt; (FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;user_id&lt;/span&gt; (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="&lt;b&gt;WATCHLIST_ITEMS&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;watchlist_id&lt;/span&gt; (PK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;user_id&lt;/span&gt; (FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;movie_id&lt;/span&gt; (FK)&lt;br/&gt;U(user_id, movie_id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="430" width="330" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="&lt;b&gt;VIEWING_HISTORY&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;viewing_id&lt;/span&gt; (PK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;user_id&lt;/span&gt; (FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px dashed #000000;&quot;&gt;movie_id&lt;/span&gt; (FK)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="600" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="&lt;b&gt;MOVIE_GENRES&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;movie_id&lt;/span&gt; (PK/FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;genre_id&lt;/span&gt; (PK/FK)&lt;br/&gt;Composite PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="790" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;b&gt;USER_GENRE_PREFERENCES&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;user_id&lt;/span&gt; (PK/FK)&lt;br/&gt;&lt;span style=&quot;border-bottom:1px solid #000000;&quot;&gt;genre_id&lt;/span&gt; (PK/FK)&lt;br/&gt;preference_score" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=11;align=left;spacing=8;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="960" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="7" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="8" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="9" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="10" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="11" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="user_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="13" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="movie_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="8" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="movie_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="10" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="movie_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="11" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="movie_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="12" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="review_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="9" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="genre_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="12" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="genre_id" style="endArrow=block;html=1;rounded=1;strokeColor=#4BA3C7;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="13" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
